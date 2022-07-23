@@ -20,3 +20,12 @@ Feature: You are working in the backend team that exposes the service https://js
     Examples:
       |postId|name                     |email             |body                          |
       |8     |My new Comment           |hussaini@gmail.com |I like this new post so much |
+
+  @regression
+  Scenario Outline: Test that new Users can be created with a Post request
+    Given service is up and running
+    When I create a new request for the following details "<postId>", "<name>", "<email>" and "<body>" for users
+    Then I should get the correct "<postId>", "<name>", "<email>" and "<body>" returned and with status code of 201 for users
+    Examples:
+      |postId|name                     |email             |body                          |
+      |7     |My new Comment           |hussaini@gmail.com |I like this new post so much |
