@@ -2,7 +2,7 @@ package step_Definitions;
 
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import io.cucumber.gherkin.internal.com.eclipsesource.json.Json;
+//import io.cucumber.gherkin.internal.com.eclipsesource.json.Json;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
@@ -27,7 +27,7 @@ public class BaseSteps {
         makeAPostPayload = "/template/MakeAPost.json";
         serviceUrl = "https://jsonplaceholder.typicode.com/";
         makeAPostEndPoint = serviceUrl + "posts/";
-        makeACommentEndPoint = serviceUrl + "comments";
+        makeACommentEndPoint = serviceUrl + "comments/";
         createAUserEndPoint = serviceUrl + "users/";
     }
 
