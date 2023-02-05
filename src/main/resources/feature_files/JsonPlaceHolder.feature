@@ -3,7 +3,7 @@ Feature: You are working in the backend team that exposes the service https://js
   # Comment on posts: https://jsonplaceholder.typicode.com/comments
   # List of users:  https://jsonplaceholder.typicode.com/users
 
-#  @regression
+  @regression
   Scenario Outline: Test that existing comments can be retrieved with a Get request
     Given service is up and running
     When I search for "<id>" of a comment with a Get method
@@ -12,7 +12,7 @@ Feature: You are working in the backend team that exposes the service https://js
       |id|name                                      |email                  |body                                                                                                                                                                        |
       |2 |quo vero reiciendis velit similique earum |Jayne_Kuhic@sydney.com |est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et |
 
-  @regression
+#  @regression
   Scenario Outline: Test that new comments can be created with a Post request
     Given service is up and running
     When I create a new request for the following details "<postId>", "<name>", "<email>" and "<body>"
@@ -21,7 +21,7 @@ Feature: You are working in the backend team that exposes the service https://js
       |postId|name                     |email             |body                          |
       |8     |My new Comment           |hussaini@gmail.com |I like this new post so much |
 
-  @regression
+#  @regression
   Scenario Outline: Test that new Users can be created with a Post request
     Given service is up and running
     When I create a new request for the following details "<postId>", "<name>", "<email>" and "<body>" for users
